@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Login page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="format.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div>
+        <h1>Login to system</h1>
+        <form action="LoginServlet" method="POST">
+        Username: <input type="text" name="username" value="" /><br />
+        <p>Password must contains UpperCase, LowerCase, Number/ Special Char and min 8 Chars</p>
+        Password: <input type="password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" name="password" value="" /><br />
+        <input type="submit" value="Login" />
+        </form>
+        </div>
+        
+    </body>
+</html>
