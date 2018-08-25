@@ -35,7 +35,7 @@
     </nav>
   
     <div class="jumbotron text-center">
-      <h1>Trouver votre auberge idéal!</h1>
+      <h1>Trouver l'auberge idéal!</h1>
     </div>
 
     <div class="container">
@@ -46,7 +46,7 @@
             <div>
                 <input type="button" class="btn btn-warning" onclick="javascript:window.location='DetailsServlet';" value="Voir l'offre"/>
                 <input type="button" class="btn btn-primary" onclick="javascript:window.location='CarteServlet';" value="Carte"/>
-                 
+                <input type="button" class="btn btn-success" onclick="javascript:window.location='CheckoutServlet';" value="Check-out"/>
             </div>
         </div>
 

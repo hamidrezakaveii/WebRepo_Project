@@ -16,6 +16,7 @@ public class User {
     private String email;
     private String password;
     private int noCarteCredit;
+    private String moisCarte;
 
     public User(int id_client, String nom, String prenom, String email, String password, int noCarteCredit) {
         this.id_client = id_client;
@@ -24,7 +25,8 @@ public class User {
         this.email = email;
         this.password = password;
         this.noCarteCredit = noCarteCredit;
-    }
+        this.moisCarte = moisCarte;
+    }   
 
     public int getId_client() {
         return id_client;
@@ -74,9 +76,17 @@ public class User {
         this.noCarteCredit = noCarteCredit;
     }
 
+    public String getMoisCarte() {
+        return moisCarte;
+    }
+
+    public void setMoisCarte(String moisCarte) {
+        this.moisCarte = moisCarte;
+    }
+
     @Override
     public String toString() {
-        return "User{" + "id_client=" + id_client + ", nom=" + nom + ", prenom=" + prenom + ", email=" + email + ", password=" + password + ", noCarteCredit=" + noCarteCredit + '}';
+        return "User{" + "id_client=" + id_client + ", nom=" + nom + ", prenom=" + prenom + ", email=" + email + ", password=" + password + ", noCarteCredit=" + noCarteCredit + ", moisCarte=" + moisCarte + '}';
     }
     
 }

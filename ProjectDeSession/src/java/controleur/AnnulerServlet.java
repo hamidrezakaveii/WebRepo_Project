@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author PatrickDesautels
  */
-public class RetourServlet extends HttpServlet {
+public class AnnulerServlet extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -29,7 +29,10 @@ public class RetourServlet extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        response.setContentType("text/html;charset=UTF-8");
+        
+        //code pour annuler la saisie des champs et retourner a la page index
+        //...
+        
         request.getRequestDispatcher("/WEB-INF/index.jsp").forward(request, response);
     }
 
