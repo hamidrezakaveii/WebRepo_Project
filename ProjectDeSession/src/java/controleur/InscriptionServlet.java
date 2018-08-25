@@ -1,3 +1,5 @@
+package controleur;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -19,7 +21,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author TP_BNB
  */
-public class inscriptionServlet extends HttpServlet {
+public class InscriptionServlet extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -34,6 +36,8 @@ public class inscriptionServlet extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();
+        
+        request.getRequestDispatcher("/WEB-INF/pageSinscrire.html").forward(request, response);
         
         String prenom = request.getParameter("Prénom");
         String nom = request.getParameter("nom");
@@ -68,8 +72,8 @@ public class inscriptionServlet extends HttpServlet {
                         }
                     catch(Exception se){
                         //à déterminer
-                           
                         }   
+                    
 			RequestDispatcher rd = request.getRequestDispatcher("index.html");
 			rd.forward(request, response);
 		}

@@ -2,27 +2,54 @@
 <web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
     <servlet>
         <servlet-name>LoginServlet</servlet-name>
-        <servlet-class>LoginServlet</servlet-class>
+        <servlet-class>controleur.LoginServlet</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>SignInServlet</servlet-name>
-        <servlet-class>inscriptionServlet</servlet-class>
+        <servlet-name>InscriptionServlet</servlet-name>
+        <servlet-class>controleur.InscriptionServlet</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>inscriptionToDB</servlet-name>
-        <servlet-class>inscriptionToDBServlet</servlet-class>
+        <servlet-name>CheckoutServlet</servlet-name>
+        <servlet-class>controleur.CheckoutServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CarteServlet</servlet-name>
+        <servlet-class>controleur.CarteServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DetailsServlet</servlet-name>
+        <servlet-class>controleur.DetailsServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RetourServlet</servlet-name>
+        <servlet-class>controleur.RetourServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>LoginServlet</servlet-name>
         <url-pattern>/LoginServlet</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>SignInServlet</servlet-name>
-        <url-pattern>/SignInServlet</url-pattern>
+        <servlet-name>InscriptionServlet</servlet-name>
+        <url-pattern>/InscriptionServlet</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>inscriptionToDB</servlet-name>
-        <url-pattern>/inscriptionToDB</url-pattern>
+        <servlet-name>CheckoutServlet</servlet-name>
+        <url-pattern>/CheckoutServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CarteServlet</servlet-name>
+        <url-pattern>/CarteServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DetailsServlet</servlet-name>
+        <url-pattern>/DetailsServlet</url-pattern>
+    </servlet-mapping>
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+    <servlet-mapping>
+        <servlet-name>RetourServlet</servlet-name>
+        <url-pattern>/RetourServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
