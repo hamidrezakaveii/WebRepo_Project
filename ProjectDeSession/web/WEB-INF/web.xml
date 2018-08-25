@@ -4,9 +4,25 @@
         <servlet-name>LoginServlet</servlet-name>
         <servlet-class>LoginServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>SignInServlet</servlet-name>
+        <servlet-class>inscriptionServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>inscriptionToDB</servlet-name>
+        <servlet-class>inscriptionToDBServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>LoginServlet</servlet-name>
         <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SignInServlet</servlet-name>
+        <url-pattern>/SignInServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>inscriptionToDB</servlet-name>
+        <url-pattern>/inscriptionToDB</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
